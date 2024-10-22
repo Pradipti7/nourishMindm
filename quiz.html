@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NourishMind - Home</title>
+    <link rel="stylesheet" href="quizz.css">
+   <script src="quiz.js" defer></script>
+</head>
+<body>
+    
+    <nav>
+        <a  class="logo">
+            <img src="Images/headh.png" alt="Logo" class="logo-image">
+           
+            <span>NourishMind</span>
+        </a>
+        <div class="links">
+
+            <a href="index.html">Home</a>
+
+            <a href="aboutUs.html">About Us</a>
+            <a href="Blog.html">blogs</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="connect.html"> Connect with professionals</a>
+            <a href="communtiy.html">
+                <button class="cta">Community Forum</button>
+            </a>
+        </div>
+    </nav>
+    <header class="header">
+        <h1>Check Your Symptoms</h1>
+        <p>Take a quick survey to assess your mental well-being. </p>
+      
+
+    </header>
+
+
+    <section class="quiz-section">
+        <h2>Well-being Survey</h2>
+        <form id="quizForm" action="#" method="post" class="quiz-form">
+            <!-- Question 1 -->
+            <label for="question1">1. Do you often feel overly concerned about your weight?</label><br>
+            <input type="radio" id="question1-yes" name="question1" value="yes"> Yes<br>
+            <input type="radio" id="question1-no" name="question1" value="no"> No<br><br>
+            
+            <!-- Question 2 -->
+            <label for="question2">2. Do you avoid certain foods due to fear of gaining weight?</label><br>
+            <input type="radio" id="question2-yes" name="question2" value="yes"> Yes<br>
+            <input type="radio" id="question2-no" name="question2" value="no"> No<br><br>
+    
+            <!-- Question 3 -->
+            <label for="question3">3. Do you experience frequent binge eating episodes?</label><br>
+            <input type="radio" id="question3-yes" name="question3" value="yes"> Yes<br>
+            <input type="radio" id="question3-no" name="question3" value="no"> No<br><br>
+    
+            <!-- Question 4 -->
+            <label for="question4">4. Do you frequently eat when you’re not physically hungry?</label><br>
+            <input type="radio" id="question4-yes" name="question4" value="yes"> Yes<br>
+            <input type="radio" id="question4-no" name="question4" value="no"> No<br><br>
+    
+            <!-- Question 5 -->
+            <label for="question5">5. Do you often compare your body to others or feel dissatisfied with your appearance?</label><br>
+            <input type="radio" id="question5-yes" name="question5" value="yes"> Yes<br>
+            <input type="radio" id="question5-no" name="question5" value="no"> No<br><br>
+    
+            <!-- Question 6 -->
+            <label for="question6">6. Do you use food to cope with stress, anxiety, or other emotions?</label><br>
+            <input type="radio" id="question6-yes" name="question6" value="yes"> Yes<br>
+            <input type="radio" id="question6-no" name="question6" value="no"> No<br><br>
+    
+            <!-- Question 7 -->
+            <label for="question7">7. Have you engaged in any behaviors to "undo" eating, such as fasting, excessive exercising, or vomiting?</label><br>
+            <input type="radio" id="question7-yes" name="question7" value="yes"> Yes<br>
+            <input type="radio" id="question7-no" name="question7" value="no"> No<br><br>
+    
+            <!-- Question 8 -->
+            <label for="question8">8. Have you noticed any significant changes in your weight (either loss or gain) over the past few months?</label><br>
+            <input type="radio" id="question8-yes" name="question8" value="yes"> Yes<br>
+            <input type="radio" id="question8-no" name="question8" value="no"> No<br><br>
+    
+            <!-- Question 9 -->
+            <label for="question9">9. Are you experiencing any physical symptoms, such as fatigue, digestive issues, or changes in your menstrual cycle (if applicable)?</label><br>
+            <input type="radio" id="question9-yes" name="question9" value="yes"> Yes<br>
+            <input type="radio" id="question9-no" name="question9" value="no"> No<br><br>
+    
+            <!-- Question 10 -->
+            <label for="question10">10. How have your eating habits affected your daily life, relationships, or activities?</label><br>
+            <input type="radio" id="question10-yes" name="question10" value="yes"> Yes<br>
+            <input type="radio" id="question10-no" name="question10" value="no"> No<br><br>
+    
+            <!-- Submit Button -->
+            <div class="view-more">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+        <div id="quizResult" class="result-section"></div>
+    </section>
+
+    <footer>
+        <h3>NourishMind</h3>
+        <div class="right">
+            <div class="links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Support</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+        
+        <p>Copyright © 2024 Mental Health Help, All Rights Reserved by NourishMind.</p>
+    </div>
+</footer>
+</body>
+</html>

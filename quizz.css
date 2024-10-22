@@ -1,0 +1,244 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fbf5d1;
+}
+
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f6e8c2; /* Soft yellow */
+    color: #070707;
+}
+.cta {
+    background-color: #f3c701; /* Pale green */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    color: #333;
+}
+
+.header h1 {
+    position: relative;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+nav {
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    height: 80px;
+    background-color: #d5dcb4;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    justify-content: space-evenly;
+}
+.header .btn:hover , .view-more .btn:hover,  .article-list .btn:hover, .blog-card .btn:hover, .article-info .btn:hover , .left .btn:hover, .about-text .btn:hover {
+    background-color: #dfbe2f;
+    }
+nav .logo {
+    display: flex; 
+    align-items: center; 
+}
+.logo-image {
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%;
+    margin-right: 30px; 
+    margin-left: -200px;
+}
+
+nav a.logo {
+    align-items: center;
+    font-size: 28px;
+    color: #333;
+    font-weight: 700;
+}
+
+nav .logo span {
+    margin-left: -10px;
+}
+
+nav .links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px; 
+}
+
+nav .links a {
+    position: relative;
+    font-weight: 500;
+    padding: 5px 0; 
+    transition: color 0.3s ease; 
+    text-decoration: none;
+}
+
+nav .links a:hover {
+    color: #22d3ff; /* Change text color on hover */
+}
+
+nav .links a::after {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px; 
+    width: 100%; 
+    background-color: #d5dcb4; 
+    transform: scaleX(0); 
+    transition: transform 0.3s ease; 
+}
+
+nav .links a:hover::after {
+    transform: scaleX(1); /* Show underline on hover */
+}
+.header .btn:hover , .cta:hover, .view-more .btn:hover, .quiz-button:hover, .article-list .btn:hover, .blog-card .btn:hover, .article-info .btn:hover , .left .btn:hover, .about-text .btn:hover {
+    background-color: #dfbe2f;
+    }
+
+.quizz {
+    padding: 0 40px; 
+    height: calc(100vh-80px);
+    display: flex;
+    justify-content: center;
+    background-color: #f6e8c2;
+    align-items: center;
+
+}
+.quiz-section{
+  
+  
+    text-align:center;
+    padding: 50px;
+    background-color: #e2e5b2;
+
+}
+.quizz .left{
+    max-width: 600px;
+}
+.quiz-section h2{
+    text-align: center;
+}
+.quiz-form label{
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+}
+.quizz .left h3{
+    font-size: 30px;
+    color: #333;
+
+}
+.quiz-button {
+    display: inline-flex;
+    align-items: center; 
+    background-color: #f3c701;
+    color: rgb(17, 17, 17);
+    padding: 10px 20px;
+    border-radius: 30px; 
+    transition: background-color 0.3s ease; 
+    text-decoration: none; 
+    cursor: pointer;
+}
+.quizz .left p{
+    margin: 20px 0;
+    color: #3a3939;
+    font-size: 15px;
+}
+.quizz img{
+    width: 100%;
+    padding: 20px;
+    height: auto;
+    max-width: 400px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+/* Add styles for the result display section */
+.result-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f3c701;
+    color: #333;
+    border-radius: 10px;
+    display: none;
+    text-align: center;
+}
+
+.result-section h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.result-section p {
+    font-size: 18px;
+}
+
+.view-more {
+    display: flex;                          
+    justify-content: center;                 
+    align-items: center;                    
+    margin-top: 40px;  
+    text-decoration: none;                     
+}
+.btn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+.header .btn , .view-more .btn,  .article-list .btn, .blog-card .btn, .article-info .btn , .left .btn, .about-text .btn {
+    background-color: #f3c701; 
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #0e0d0d;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+}
+
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: #3a3939;
+    color: #fff;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 36px;
+}
+
+footer .links a {
+    color: #aaa;
+    margin: 0 10px;
+}
+
+footer .links a:hover {
+    color: #fff;
+}
+
+

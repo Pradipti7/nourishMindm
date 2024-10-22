@@ -1,0 +1,328 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fbf5d1;
+}
+
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f6e8c2; /* Soft yellow */
+    color: #070707;
+}
+
+.header h1 {
+    position: relative;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+nav {
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    height: 80px;
+    background-color: #d5dcb4;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    justify-content: space-evenly;
+}
+
+nav .logo {
+    display: flex; 
+    align-items: center; 
+}
+.logo-image {
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%;
+    margin-right: 30px; 
+    margin-left: -200px;
+}
+
+nav a.logo {
+    align-items: center;
+    font-size: 28px;
+    color: #333;
+    font-weight: 700;
+}
+
+nav .logo span {
+    margin-left: -10px;
+}
+nav .links a:hover {
+    color: #22d3ff; /* Change text color on hover */
+}
+
+nav .links a::after {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px; 
+    width: 100%; 
+    background-color: #d5dcb4; 
+    transform: scaleX(0); 
+    transition: transform 0.3s ease; 
+}
+
+nav .links a:hover::after {
+    transform: scaleX(1); /* Show underline on hover */
+}
+.cta {
+    background-color: #f3c701; /* Pale green */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    color: #333;
+}
+
+nav .links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px; 
+}
+
+nav .links a {
+    position: relative;
+    font-weight: 500;
+    padding: 5px 0; 
+    transition: color 0.3s ease; 
+    text-decoration: none;
+}
+
+nav .links a:hover {
+    color: #22d3ff; /* Change text color on hover */
+}
+
+nav .links a::after {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px; 
+    width: 100%; 
+    background-color: #d5dcb4; 
+    transform: scaleX(0); 
+    transition: transform 0.3s ease; 
+}
+
+nav .links a:hover::after {
+    transform: scaleX(1); /* Show underline on hover */
+}
+.blogs {
+    text-align: center;
+    padding: 50px;
+    background-color: #d5dcb4; /* Light green */
+}
+
+.blog-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.blog-card {
+    background-color: #fbf5d1; /* Light cream */
+    padding: 20px;
+    width: 30%;
+    text-align: left;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.blog-card a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+.article-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.article-box {
+    flex: 1 1 calc(50% - 20px);
+    display: flex;
+    padding-block: 5%;
+    padding-left: 2px;
+    background-color: #f6e8c2;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.article-info p{
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+}
+.team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    background-color: #d5dcb4;
+}
+.teamm{
+    display: flex;
+    justify-content: center;
+}
+.teamm h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    display: f;
+    justify-content: center;
+}
+.team-member {
+    background: #f6e8c2; 
+    border: 1px solid #d5dcb4; 
+    border-radius: 30px; 
+    padding: 15px; 
+    width: 200px; 
+    text-align: center; 
+    
+    
+    margin: 10px 0; 
+}
+
+.ceo {
+    font-weight: bold; /* Bold font for CEO */
+    background: #f6e8c2; /* Different background for CEO */
+}
+
+.team-members {
+    display: flex; 
+    justify-content: space-around; 
+    width: 100%; 
+    margin-top: 20px; 
+}
+
+.team-member:nth-child(n + 2) {
+    margin-left: 10px; 
+}
+.thank-you {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f6e8c2; /* Soft yellow */
+    color: #070707;
+}
+
+.article-box:hover, .team-member:hover, .ceo:hover {
+    transform: translateY(-5px);
+}
+
+.view-more {
+    display: flex;                          
+    justify-content: center;                 
+    align-items: center;                    
+    margin-top: 40px;  
+    text-decoration: none;                     
+}
+
+
+.header .btn , .view-more .btn,  .article-list .btn, .blog-card .btn, .article-info .btn , .left .btn, .about-text .btn, .cta:hover {
+    background-color: #f3c701; 
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #0e0d0d;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+}
+
+.header .btn:hover , .cta:hover, .view-more .btn:hover, .quiz-button:hover, .article-list .btn:hover, .blog-card .btn:hover, .article-info .btn:hover , .left .btn:hover, .about-text .btn:hover {
+    background-color: #dfbe2f;
+    
+}
+.create-post {
+    background-color: #f9f9f9; 
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0; 
+
+}
+.create-post h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    color: #333; 
+    margin-bottom: 10px; 
+}
+
+.create-post-form {
+    display: flex;
+    flex-direction: column; 
+}
+
+.create-post-form label {
+    font-weight: bold; 
+    margin-bottom: 5px; 
+    color: #555; 
+}
+
+.create-post-form input[type="text"],
+.create-post-form textarea,
+.create-post-form input[type="file"] {
+    border: 1px solid #d5dcb4; 
+    border-radius: 4px; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    font-size: 16px; 
+    width: 100%; 
+}
+
+.create-post-form textarea {
+    resize:both; 
+}
+
+.profile-image {
+    display: flex;
+    justify-content: flex-end;
+
+    width: auto; 
+    height: auto;
+    max-width: 100%;
+    max-height: 150px;
+    margin: 0 auto 10px auto;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #3a3939;
+    color: #fff;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 36px;
+}
+
+footer .links a {
+    color: #aaa;
+    margin: 0 10px;
+}
+
+footer .links a:hover {
+    color: #fff;
+}
